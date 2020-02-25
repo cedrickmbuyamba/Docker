@@ -1,0 +1,9 @@
+FROM alpine
+
+MAINTAINER cmbuyamb <cmbuyamb@student.wtc.co.za>
+
+RUN apk update && \
+    apk upgrade && \
+    apk add emacs
+
+ENTRYPOINT emacs
